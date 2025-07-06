@@ -1,0 +1,9 @@
+tensorflow>=2.11
+numpy
+pandas
+matplotlib
+scikit-learn
+dill
+streamlit
+keras-tuner
+ipykernel
