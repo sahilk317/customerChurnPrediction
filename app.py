@@ -1,3 +1,5 @@
+#!/usr/bin/env python3.11
+
 import streamlit as st 
 import tensorflow 
 from tensorflow.keras.models import load_model
