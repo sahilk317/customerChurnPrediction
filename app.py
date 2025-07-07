@@ -3,6 +3,7 @@
 import streamlit as st 
 import tensorflow as tf
 from tensorflow.keras.models import load_model
+from transformer_builder import transformer
 import pandas as pd 
 import numpy as np
 import dill
@@ -10,7 +11,7 @@ import dill
 
 
 # Load transformer
-with open('model.pkl', 'rb') as f:
+with open("model.m5", "rb") as f:
     transformer = dill.load(f)
 
 # Load trained Keras model
