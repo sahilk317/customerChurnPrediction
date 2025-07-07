@@ -6,13 +6,17 @@ from tensorflow.keras.models import load_model
 from transformer_builder import transformer
 import pandas as pd 
 import numpy as np
+import joblib
 import dill
 
 
 
 # Load transformer
-with open("model.m5", "rb") as f:
-    transformer = dill.load(f)
+# with open("model.m5", "rb") as f:
+#     transformer = dill.load(f)
+
+
+transformer = joblib.load("transformer.joblib")
 
 # Load trained Keras model
 model = load_model('best_model.h5')

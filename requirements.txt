@@ -7,3 +7,4 @@ dill
 streamlit
 keras-tuner
 ipykernel
+joblib
