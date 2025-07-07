@@ -10,7 +10,7 @@ import dill
 
 
 # Load transformer
-with open('model.m5', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     transformer = dill.load(f)
 
 # Load trained Keras model
